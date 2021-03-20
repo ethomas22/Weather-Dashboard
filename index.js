@@ -2,7 +2,7 @@ var apiKey = "c78f98deeef4c403d7d54ac84ffbb213";
 
 function getWeather(cityName) {
   $.ajax({
-    url: `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=imperial`,
+    url: `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=imperial`,
     method: "GET",
   }).then(function (currentWeather) {
     $.ajax({
