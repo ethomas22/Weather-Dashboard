@@ -30,3 +30,4 @@ $("#search").on("submit", function (event) {
   event.preventDefault();
   getWeather($("#citysearch").val())
 })
+
